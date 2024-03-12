@@ -1,0 +1,41 @@
+<!DOCTYPE html>ar
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Medotos</title>
+</head>
+<body>
+    <script>
+        class Empresa{
+            nome;
+            receitaAnual;
+            despesasAnuais;
+            constructor(nome, receitaAnual, despesasAnuais){
+                this.nome = nome;
+                this.receitaAnual = receitaAnual;
+                this.despesasAnuais = despesasAnuais;
+            }
+            calcularLucroAnual(){
+                return(this.despesasAnuais - this.receitaAnual)
+            }
+            exibirRelatorio
+            (){
+                return("O nome é: " + this.nome + ". E a Receita Anual é: " + this.receitaAnual + ". E a despesas Anuais é: " + this.despesasAnuais)
+            }
+
+
+        }
+
+        let Empresa1 = new Empresa("Turion", 4000000, 1000000);
+        let Empresa2 = new Empresa("Google", 10000000, 5000000);
+        console.log(`Lucro Anual:  ${Empresa1.calcularLucroAnual()}`)
+        console.log(Empresa1.exibirRelatorio())
+        console.log(Empresa2.exibirRelatorio())
+        console.log(`Lucro Anual:  ${Empresa2.calcularLucroAnual()}`)
+
+
+
+    </script>
+</body>
+</html>

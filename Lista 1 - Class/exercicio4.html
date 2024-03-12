@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Medotos</title>
+</head>
+<body>
+    <script>
+        class Celular{
+            marca;
+            modelo;
+            armanezamento;
+            constructor(marca, modelo, armanezamento){
+                this.marca = marca;
+                this.modelo = modelo;
+                this.armanezamento = armanezamento;
+            }
+            informacoesCelular(){
+                return("As informações do celular é: " + this.marca + ". Modelo: " + this.modelo + ". E armanezamento: " + this.armanezamento)
+            }
+        }
+
+        let Celular1 = new Celular("Iphone", 14, 128);
+        console.log(Celular1);
+        console.log(Celular1.informacoesCelular())
+    </script>
+</body>
+</html>

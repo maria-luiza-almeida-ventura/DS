@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Medotos</title>
+</head>
+<body>
+    <script>
+        class Casa{
+            endereço;
+            numeroQuartos;
+            area;
+            constructor(endereço, numeroQuartos, area){
+                this.endereço = endereço;
+                this.numeroQuartos = numeroQuartos
+                this.area = area;
+            }
+            informacoesCasa(){
+                return("A informações da casa é: " + this.endereço + ". Numero de quartos:" + this.numeroQuartos + ". E area " + this.area)
+            }
+        }
+
+        let Casa1 = new Casa("Rua coronel", "3", "20");
+        console.log(Casa1);
+        console.log(Casa1.informacoesCasa())
+
+    </script>
+</body>
+</html>

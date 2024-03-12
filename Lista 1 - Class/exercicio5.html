@@ -1,0 +1,29 @@
+<!DOCTYPE html>ar
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Medotos</title>
+</head>
+<body>
+    <script>
+        class Filme{
+            titulo;
+            genero;
+            duracao;
+            constructor(titulo, genero, duracao){
+                this.titulo = titulo;
+                this.genero = genero;
+                this.duracao = duracao;
+            }
+            informacoesFilme(){
+                return("As informações do Filme é: " + this.titulo + ". Genero: " + this.genero + ". E duração: " + this.duracao)
+            }
+        }
+
+        let Filme1 = new Filme("A cinco passos de voce", "drama", "1h40");
+        console.log(Filme1);
+        console.log(Filme1.informacoesFilme())
+    </script>
+</body>
+</html>
